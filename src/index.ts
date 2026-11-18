@@ -1,6 +1,7 @@
 import joplin from 'api';
 import { MenuItemLocation, ImportContext, FileSystemItem } from 'api/types';
 import { convert } from './converter';
+import { initI18n, _ } from './i18n';
 const fs = require('fs-extra');
 
 
@@ -67,17 +68,19 @@ const import_module = async (ctx: ImportContext) : Promise<void> =>
  */
 async function setupPlugin()
 {
-	const scriptId = 'pluginCommandPasteCsv';
+	await initI18n();
+
+	const scriptId = 'pluginCommandPasteCsvI18n';
 
 	await joplin.commands.register(
 		{
 			name: scriptId,
-			label: 'Paste Csv',
+			label: _('Paste Csv'),
 			execute: paste_csv_command, 
 		});
 	
 	await joplin.views.menuItems.create(
-		'mnuPasteCsv', 
+		'mnuPasteCsvI18n', 
 		scriptId,
 		MenuItemLocation.Edit);
 
@@ -85,7 +88,7 @@ async function setupPlugin()
 		{
 			format: 'csv',
 			isNoteArchive: false,
-			description: 'Csv File (utf-8)',
+			description: _('Csv File (utf-8)'),
 			fileExtensions: [ 'csv', ],
 			sources: [ FileSystemItem.File ],
 			onExec: import_module,

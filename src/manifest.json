@@ -1,12 +1,12 @@
 {
 	"manifest_version": 1,
-	"id": "de.habelt.CsvImport",
+	"id": "de.habelt.CsvImport.i18n",
 	"app_min_version": "2.2",
-	"version": "1.0.1",
-	"name": "Csv Import",
-	"description": "Imports a Csv file or pastes a Csv text from Clipboard as table",
-	"author": "Jürgen Habelt",
-	"homepage_url": "https://github.com/Mick2nd/CsvImport#readme",
-	"repository_url": "https://github.com/Mick2nd/CsvImport",
-	"keywords": ["joplin-plugin", "import-plugin", "csv-import"]
+	"version": "1.1.0",
+	"name": "Csv Import i18n",
+	"description": "Imports a Csv file or pastes a Csv text from Clipboard as table (UI translation test build, follows the Joplin language setting)",
+	"author": "Jürgen Habelt, akira tamcat",
+	"homepage_url": "https://github.com/akiratamcat/CsvImport#readme",
+	"repository_url": "https://github.com/akiratamcat/CsvImport",
+	"keywords": ["joplin-plugin", "import-plugin", "csv-import", "i18n"]
 }

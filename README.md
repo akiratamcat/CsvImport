@@ -1,5 +1,15 @@
 # Joplin CSV Import Plugin
 
+> **About this fork (Csv Import i18n — personal test build)**
+>
+> This is a personal test build of the original [CsvImport](https://github.com/Mick2nd/CsvImport) plugin by Jürgen Habelt, with UI translation added using gettext PO files (`src/locales/*.po`). The UI language automatically follows the Joplin language setting (restart Joplin after changing it). Supported: Japanese, Chinese (Simplified / Traditional), Korean, German, French, Spanish, Italian, Portuguese (Brazil), Russian; other languages fall back to English. The plugin ID is `de.habelt.CsvImport.i18n`, so it can be installed side by side with the original. This build is not an official release.
+>
+> **このフォークについて（Csv Import i18n — 個人テスト版）**
+>
+> Jürgen Habelt 氏によるオリジナルの [CsvImport](https://github.com/Mick2nd/CsvImport) プラグインに、gettext の PO ファイル（`src/locales/*.po`）による UI 翻訳を追加した個人テスト版です。UI の言語は Joplin 本体の言語設定に自動で追従します（変更後は Joplin を再起動してください）。対応言語は日本語、中国語（簡体字・繁体字）、韓国語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語（ブラジル）、ロシア語で、それ以外の言語では英語で表示されます。プラグイン ID は `de.habelt.CsvImport.i18n` なので、オリジナル版と並べてインストールできます。公式リリースではありません。
+>
+> To add a language: copy `src/locales/csvimport.pot` to `src/locales/<lang>.po` (e.g. `pt_BR`, `ja`) and fill in `msgstr`. / 言語を追加するには `src/locales/csvimport.pot` を `src/locales/<言語>.po` にコピーして `msgstr` を埋めてください。
+
 This plugin serves the insertion of a md table from CSV text from either the clipboard or a CSV file.
 This plug-in can be used in either of 2 ways:
 

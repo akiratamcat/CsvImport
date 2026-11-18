@@ -1,6 +1,7 @@
 {
-  "name": "joplin-plugin-csv-import",
-  "version": "1.0.1",
+  "name": "joplin-plugin-csv-import-i18n",
+  "version": "1.1.0",
+  "author": "Jürgen Habelt, akira tamcat",
   "scripts": {
     "dist": "antlr4-tool --no-visitor -l ts -o src/generated src/csv.g4 src/csvAnalyze.g4 && webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
     "prepare": "npm run dist",
@@ -10,7 +11,8 @@
   },
   "license": "MIT",
   "keywords": [
-    "joplin-plugin"
+    "joplin-plugin",
+    "i18n"
   ],
   "devDependencies": {
     "@types/node": "^14.0.14",
